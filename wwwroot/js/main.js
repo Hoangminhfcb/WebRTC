@@ -22,8 +22,8 @@ const servers = {
         { urls: 'stun:stun1.l.google.com:19302' },
         {
             urls: 'turn:relay1.expressturn.com:3478',
-            username: 'ef7e6',
-            credential: '1ad19a3bfa'
+            username: 'ef679Z9L9DLWRZVG99',
+            credential: 'e10aJT8n5An05XNX'
         }
     ]
 };
