@@ -18,14 +18,30 @@ const statusMessage = document.getElementById('statusMessage');
 // Cấu hình ICE servers
 const servers = {
     iceServers: [
-        { urls: 'stun:stun.l.google.com:19302' },
-        { urls: 'stun:stun1.l.google.com:19302' },
         {
-            urls: 'turn:relay1.expressturn.com:3478',
-            username: 'ef679Z9L9DLWRZVG99',
-            credential: 'e10aJT8n5An05XNX'
-        }
-    ]
+            urls: "stun:stun.relay.metered.ca:80",
+        },
+        {
+            urls: "turn:asia.relay.metered.ca:80",
+            username: "ea92b8a1cf98c863c7ddc1d1",
+            credential: "8/KKLoLqQIV+H5w9",
+        },
+        {
+            urls: "turn:asia.relay.metered.ca:80?transport=tcp",
+            username: "ea92b8a1cf98c863c7ddc1d1",
+            credential: "8/KKLoLqQIV+H5w9",
+        },
+        {
+            urls: "turn:asia.relay.metered.ca:443",
+            username: "ea92b8a1cf98c863c7ddc1d1",
+            credential: "8/KKLoLqQIV+H5w9",
+        },
+        {
+            urls: "turns:asia.relay.metered.ca:443?transport=tcp",
+            username: "ea92b8a1cf98c863c7ddc1d1",
+            credential: "8/KKLoLqQIV+H5w9",
+        },
+    ],
 };
 
 // Xử lý sự kiện click
