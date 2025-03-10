@@ -5,6 +5,10 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+  # Thêm permissions để cho phép GitHub Actions ghi vào repository
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
