@@ -22,4 +22,4 @@ EXPOSE 5001
 ENV ASPNETCORE_URLS=http://+:5001
 
 # Chạy ứng dụng
-ENTRYPOINT ["dotnet", "SignalRServer.dll"]
+ENTRYPOINT ["dotnet", "WebRTCDemo.dll"]
