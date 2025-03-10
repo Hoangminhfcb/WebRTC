@@ -40,7 +40,7 @@ function connectSignaling() {
 
     // Tạo kết nối SignalR
     signalConnection = new signalR.HubConnectionBuilder()
-        .withUrl(`${protocol}://${host}:${port}/signalhub`)
+        .withUrl(`https://signalr-0bv0.onrender.com/signalhub`)
         .withAutomaticReconnect()
         .build();
 
