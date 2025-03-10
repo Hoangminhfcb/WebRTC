@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "jjU3jChj1E0n+tun4rR7sy8GujDBNMeVIBAnu2YIcTg=",
+  "Source": "WebRTCDemo",
+  "BasePath": "_content/WebRTCDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebRTCDemo\\wwwroot",
+      "Source": "WebRTCDemo",
+      "ContentRoot": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\",
+      "BasePath": "_content/WebRTCDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\obj\\Debug\\net9.0\\compressed\\nj412o0cvl-0dlh97md5a.gz",
+      "SourceId": "WebRTCDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/WebRTCDemo",
+      "RelativePath": "js/main#[.{fingerprint=0dlh97md5a}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\js\\main.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5eou4s2esm",
+      "Integrity": "AxWQbkGLzjqinztu+3m9YIKRztA0lbUjm7cPRRunmtA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\js\\main.js",
+      "SourceId": "WebRTCDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\",
+      "BasePath": "_content/WebRTCDemo",
+      "RelativePath": "js/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0dlh97md5a",
+      "Integrity": "nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "js/main.0dlh97md5a.js",
+      "AssetFile": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\obj\\Debug\\net9.0\\compressed\\nj412o0cvl-0dlh97md5a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000518672199"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1927"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AxWQbkGLzjqinztu+3m9YIKRztA0lbUjm7cPRRunmtA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 10:27:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0dlh97md5a"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.0dlh97md5a.js",
+      "AssetFile": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 10:27:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0dlh97md5a"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.0dlh97md5a.js.gz",
+      "AssetFile": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\obj\\Debug\\net9.0\\compressed\\nj412o0cvl-0dlh97md5a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AxWQbkGLzjqinztu+3m9YIKRztA0lbUjm7cPRRunmtA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 10:27:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0dlh97md5a"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AxWQbkGLzjqinztu+3m9YIKRztA0lbUjm7cPRRunmtA="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.js",
+      "AssetFile": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\obj\\Debug\\net9.0\\compressed\\nj412o0cvl-0dlh97md5a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000518672199"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1927"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AxWQbkGLzjqinztu+3m9YIKRztA0lbUjm7cPRRunmtA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 10:27:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.js",
+      "AssetFile": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 10:27:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nLRwRxTT2BGhCswd9Rjo+RJFpND9FSnVpaGFG2dRZiU="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.js.gz",
+      "AssetFile": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\obj\\Debug\\net9.0\\compressed\\nj412o0cvl-0dlh97md5a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AxWQbkGLzjqinztu+3m9YIKRztA0lbUjm7cPRRunmtA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 10:27:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AxWQbkGLzjqinztu+3m9YIKRztA0lbUjm7cPRRunmtA="
+        }
+      ]
+    }
+  ]
+}

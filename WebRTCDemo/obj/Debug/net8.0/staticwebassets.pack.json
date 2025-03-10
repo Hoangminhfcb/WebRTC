@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "Z:\\Sofware Project\\WebRTC\\WebRTCDemo\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebRTCDemo.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebRTCDemo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebRTCDemo.props",
+      "PackagePath": "build\\WebRTCDemo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebRTCDemo.props",
+      "PackagePath": "buildMultiTargeting\\WebRTCDemo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebRTCDemo.props",
+      "PackagePath": "buildTransitive\\WebRTCDemo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
