@@ -18,11 +18,12 @@ const statusMessage = document.getElementById('statusMessage');
 // Cấu hình ICE servers
 const servers = {
     iceServers: [
-        { urls: ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'] },
+        { urls: 'stun:stun.l.google.com:19302' },
+        { urls: 'stun:stun1.l.google.com:19302' },
         {
-            urls: 'turn:openrelay.metered.ca:80',
-            username: 'openrelayproject',
-            credential: 'openrelayproject'
+            urls: 'turn:relay1.expressturn.com:3478',
+            username: 'ef7e6',
+            credential: '1ad19a3bfa'
         }
     ]
 };
@@ -43,7 +44,7 @@ function connectSignaling() {
 
     // Tạo kết nối SignalR
     signalConnection = new signalR.HubConnectionBuilder()
-        .withUrl(`https://signalr-0bv0.onrender.com/signalhub`)
+        .withUrl(`${protocol}://${host}:${port}/signalhub`)
         .withAutomaticReconnect()
         .build();
 
