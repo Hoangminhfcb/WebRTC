@@ -1,26 +1,18 @@
-name: Deploy C# Web App to GitHub Pages
+name: Build and Push to Deploy Branch
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
-      
+        
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
@@ -35,29 +27,13 @@ jobs:
       - name: Publish project
         run: dotnet publish --configuration Release --output ./publish
       
-      # Nếu sử dụng Blazor WebAssembly
-      - name: Change base-tag in index.html for GitHub Pages
-        if: success() && exists('./publish/wwwroot/index.html')
-        run: |
-          sed -i 's/<base href="\/" \/>/<base href="\/WebRTC\/" \/>/g' ./publish/wwwroot/index.html
-          cp ./publish/wwwroot/index.html ./publish/wwwroot/404.html
-      
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Deploy to deploy branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: './publish/wwwroot'  # Đối với Blazor WebAssembly
-          # path: './publish'  # Đối với các ứng dụng web khác
-  
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./publish
+          publish_branch: deploy  # Nhánh để đẩy code đã build lên
+          force_orphan: true      # Xóa lịch sử của nhánh để giữ cho nó gọn gàng
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
