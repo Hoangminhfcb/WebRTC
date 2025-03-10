@@ -32,6 +32,4 @@ jobs:
         with:
           folder: ./publish
           branch: deploy
-          clean: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
