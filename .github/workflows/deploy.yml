@@ -16,7 +16,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'  # Điều chỉnh phiên bản .NET của bạn
+          dotnet-version: '8.0.x'
       
       - name: Restore dependencies
         run: dotnet restore
@@ -27,9 +27,19 @@ jobs:
       - name: Publish project
         run: dotnet publish --configuration Release --output ./publish
       
+      - name: Debug GitHub Token and Repo
+        run: |
+          echo "GITHUB_TOKEN is set: ${GITHUB_TOKEN:-not set}"
+          git remote -v
+          echo "Deploying to branch: deploy"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
       - name: Deploy to deploy branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: ./publish
           branch: deploy
-          token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

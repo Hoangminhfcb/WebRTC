@@ -1,0 +1,78 @@
+# .NET Core / ASP.NET Core
+## Ignore build output
+bin/
+obj/
+publish/  # Thư mục đầu ra của dotnet publish trong workflow của bạn
+
+## Ignore runtime files
+*.dll
+*.exe
+*.pdb
+*.mdb
+
+## Ignore user-specific files
+*.user
+*.suo
+*.userprefs
+
+## Ignore dependency directories
+packages/
+nuget.exe
+
+## Ignore logs
+*.log
+logs/
+
+## Ignore IDE-specific files
+# Visual Studio
+*.sln.docstates
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.aps
+*.ilk
+*.manifest
+*.ncb
+*.opensdf
+*.pch
+*.sdf
+*.vcxproj.user
+*.vspscc
+*.vssscc
+_ReSharper*/
+*.DotSettings.user
+.vscode/
+.idea/
+
+# Rider (JetBrains)
+.idea/
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Ignore environment-specific files
+appsettings.json  # Nếu bạn muốn giữ file cấu hình mặc định trong Git, bỏ comment dòng này
+appsettings.*.json  # Các file môi trường cụ thể (Dev, Prod, etc.)
+*.env
+
+## Ignore temporary files
+*.tmp
+*.bak
+*.cache
+*.swp
+
+## Ignore test results
+TestResults/
+test-results/
+
+## Ignore GitHub Actions artifacts (nếu có)
+artifacts/
+
+## Ignore OS-generated files
+.DS_Store  # macOS
+Thumbs.db  # Windows
