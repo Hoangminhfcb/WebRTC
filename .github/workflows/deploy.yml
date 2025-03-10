@@ -28,12 +28,8 @@ jobs:
         run: dotnet publish --configuration Release --output ./publish
       
       - name: Deploy to deploy branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./publish
-          publish_branch: deploy  # Nhánh để đẩy code đã build lên
-          force_orphan: true      # Xóa lịch sử của nhánh để giữ cho nó gọn gàng
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
+          folder: ./publish
+          branch: deploy
+          clean: true
